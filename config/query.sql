@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS Todo(
+    id INT PRIMARY KEY,
+    title VARCHAR(100) NOT NULL,
+    description VARCHAR(500),
+    completed BOOLEAN DEFAULT FALSE,
+    user_id INT,    FOREIGN KEY (user_id) REFERENCES Users(id)
+)
+
+CREATE TABLE IF NOT EXISTS Users(
+    id INT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+)

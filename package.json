@@ -1,7 +1,28 @@
 {
+  "name": "tcc-project",
+  "version": "1.0.0",
+  "description": "Projeto TCC com Express e Sequelize (SQLite)",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "express",
+    "sequelize",
+    "sqlite"
+  ],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "express": "^5.1.0",
     "sequelize": "^6.37.7",
     "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0"
   }
 }
